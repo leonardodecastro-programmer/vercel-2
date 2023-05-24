@@ -40,12 +40,16 @@ header h1, a {
     color: var(--color4);
 }
 
+h1 {
+    cursor: pointer;
+}
+
 header a {
     margin-left: 20px;
     text-decoration: none;
 }
 
-.container {
+#container {
     margin-bottom: 20px;
 }
 
@@ -87,6 +91,12 @@ button {
     color: var(--color4);
     background-color: var(--color1);
     box-shadow: 2.5px 2.5px 5px 0px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: background-color 300ms ease-out;
+}
+
+button:hover {
+    background-color: var(--color2);
 }
 
 .footers-img {
@@ -104,11 +114,6 @@ img {
         display: grid;
         grid-template-columns: repeat(2, 2fr);
         gap: 15px;
-    }
-    #about {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        gap: 20px;
     }
 }
 
