@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 img {
     width: 100%;
     max-width: 100%;
@@ -33,10 +39,6 @@ body {
     background: radial-gradient(circle, #d4cfcf 50%, rgb(122, 122, 122) 100%);
 }
 
-#ipad {
-    transform: rotateZ(30deg);
-}
-
 .carousel-img {
     height: 60vh;
     width: auto;
@@ -45,15 +47,17 @@ body {
 
 #speak {
     background: radial-gradient(circle, #d4cfcf 0%, #26262c 100%);
-    display: flex;
-    justify-content: center;
 }
 
-.social-links li {
+li {
     list-style: none;
     display: inline;
 }
 
-.social-links a {
+a {
     text-decoration: none;
+}
+
+h1, h2 {
+    color: white;
 }
