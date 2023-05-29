@@ -19,19 +19,19 @@
             <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
                 <ul class="nav nav-pills d-block d-md-flex">
                     <li class="nav-item fw-bold">
-                        <a href="" class="nav-link active">
+                        <a href="#about" class="nav-link active">
                             <i class="bi bi-house-door me-1"></i>
                             About
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="" class="nav-link">
+                        <a href="#products" class="nav-link">
                             <i class="bi bi-shop-window me-1"></i>
                             Products
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="" class="nav-link">
+                        <a href="#speak" class="nav-link">
                             <i class="bi bi-chat-left-text me-1"></i>
                             Suport
                         </a>
@@ -43,48 +43,115 @@
     <section id="about">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active" data-bs-interval="10000">
                         <img src="imagens/iphone-card.png" class="d-block mx-auto carousel-img" alt="Imagem 1">
                     </div>
-                    <div class="carousel-item">
-                        <img src="imagens/mackbook-card.png" class="d-block mx-auto carousel-img" alt="Imagem 2">
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <img src="imagens/mackbook.png" class="d-block mx-auto carousel-img" alt="Imagem 2">
                     </div>
-                    <div class="carousel-item">
-                        <img src="imagens/watch-card.png" class="d-block mx-auto carousel-img" alt="Imagem 3">
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <img src="imagens/" class="d-block mx-auto carousel-img" alt="Imagem 3">
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
     </section>
         <section id="products">
-            <div class="container mt-5 mx-auto ">
+            <div class="container mt-5 mx-auto">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
-                        <div class="card">
-                            <img src="imagens/iphone-card.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Iphone</h5>
-                                <p class="card-text">Great cell phone with free shipping to of all Brazil</p>
-                                <a href="#" class="btn btn-secondary">Comprar</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
-                        <div class="card">
-                            <img src="imagens/mackbook-card.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Laptop</h5>
-                                <p class="card-text">Great laptop with free shipping to of all Brazil</p>
-                                <a href="#" class="btn btn-secondary">Comprar</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
-                        <div class="card">
-                            <img src="imagens/watch-card.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">SmartWatch</h5>
-                                <p class="card-text">Great smartwatch with free shipping to of all Brazil</p>
-                                <a href="#" class="btn btn-secondary">Comprar</a>
+                    <h2 class="section-title text-center">Products</h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#iphone" class="fw-bold text-start nav-link text-colored active">Iphone</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#mac" class="fw-bold text-start nav-link text-colored">Mack</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#acessories" class="fw-bold text-start nav-link text-colored">Acessories</button>
+                        </nav>
+                    </aside>
+                </div>
+                <div class="col-md-10">
+                    <div class="section">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="iphone">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <img src="imagens/iphone-12-finish-unselect-gallery-2-202207-removebg-preview.png" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Iphone</h5>
+                                                    <p class="card-text">Great cell phone with free shipping to of all Brazil</p>
+                                                    <a href="#" class="btn btn-secondary">Comprar</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <img src="imagens/iphone-se-finish-unselect-gallery-2-202207-removebg-preview.png" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Laptop</h5>
+                                                    <p class="card-text">Great laptop with free shipping to of all Brazil</p>
+                                                    <a href="#" class="btn btn-secondary">Comprar</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="mac">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <img src="imagens/macbook-air-midnight-select-20220606-removebg-preview.png" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Iphone</h5>
+                                                    <p class="card-text">Great cell phone with free shipping to of all Brazil</p>
+                                                    <a href="#" class="btn btn-secondary">Comprar</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <img src="imagens/mac-mini-pro-hero-202301-removebg-preview.png" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Laptop</h5>
+                                                    <p class="card-text">Great laptop with free shipping to of all Brazil</p>
+                                                    <a href="#" class="btn btn-secondary">Comprar</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="acessories">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <img src="imagens/MQDY3ref_VW_PF+watch-49-titanium-ultra_VW_PF_WF_CO+watch-face-49-alpine-ultra_VW_PF_WF_CO_GEO_BR-removebg-preview.png" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Iphone</h5>
+                                                    <p class="card-text">Great cell phone with free shipping to of all Brazil</p>
+                                                    <a href="#" class="btn btn-secondary">Comprar</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <img src="imagens/MQD83-removebg-preview.png" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Laptop</h5>
+                                                    <p class="card-text">Great laptop with free shipping to of all Brazil</p>
+                                                    <a href="#" class="btn btn-secondary">Comprar</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
