@@ -10,16 +10,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="navbar navbar-expand-lg sticky-top p-2">
+    <header class="navbar navbar-expand-lg sticky-top p-2" id="cabecalho">
         <div class="container">
-            <h1 class="navbar-brand">PHONE STORE</h1>
+            <a href="#">
+                <h1 class="navbar-brand m-0">PHONE STORE</h1>
+            </a>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
-                <ul class="nav nav-pills d-block d-md-flex">
+                <ul class="nav nav-pills d-block d-md-flex" >
                     <li class="nav-item fw-bold">
-                        <a href="#about" class="nav-link active">
+                        <a href="#about" class="nav-link">
                             <i class="bi bi-house-door me-1"></i>
                             About
                         </a>
@@ -40,177 +42,213 @@
             </nav>
         </div>
     </header>
-    <section id="about">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="about">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="carousel-item active" data-bs-interval="5000">
                         <img src="imagens/iphone-card.png" class="d-block mx-auto carousel-img" alt="Imagem 1">
                     </div>
-                    <div class="carousel-item" data-bs-interval="10000">
-                        <img src="imagens/mackbook.png" class="d-block mx-auto carousel-img" alt="Imagem 2">
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="imagens/macbook-card.png" class="d-block mx-auto carousel-img" alt="Imagem 2">
                     </div>
-                    <div class="carousel-item" data-bs-interval="10000">
-                        <img src="imagens/" class="d-block mx-auto carousel-img" alt="Imagem 3">
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="imagens/applewatch-card.png" class="d-block mx-auto carousel-img" alt="Imagem 3">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-    </section>
-        <section id="products">
-            <div class="container mt-5 mx-auto">
-                <div class="row">
-                    <h2 class="section-title text-center">Products</h2>
-                </div>
-                <div class="row">
-                    <aside class="col-md-2">
-                        <nav class="nav nav-pills flex-column nav-cardapio">
-                            <button type="button" data-bs-toggle="tab" data-bs-target="#iphone" class="fw-bold text-start nav-link text-colored active">Iphone</button>
-                            <button type="button" data-bs-toggle="tab" data-bs-target="#mac" class="fw-bold text-start nav-link text-colored">Mack</button>
-                            <button type="button" data-bs-toggle="tab" data-bs-target="#acessories" class="fw-bold text-start nav-link text-colored">Acessories</button>
-                        </nav>
-                    </aside>
-                </div>
-                <div class="col-md-10">
-                    <div class="section">
-                            <div class="tab-content">
-                                <div class="tab-pane active" id="iphone">
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <div class="card">
-                                                <img src="imagens/iphone-12-finish-unselect-gallery-2-202207-removebg-preview.png" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Iphone</h5>
-                                                    <p class="card-text">Great cell phone with free shipping to of all Brazil</p>
-                                                    <a href="#" class="btn btn-secondary">Comprar</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="card">
-                                                <img src="imagens/iphone-se-finish-unselect-gallery-2-202207-removebg-preview.png" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Laptop</h5>
-                                                    <p class="card-text">Great laptop with free shipping to of all Brazil</p>
-                                                    <a href="#" class="btn btn-secondary">Comprar</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane" id="mac">
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <div class="card">
-                                                <img src="imagens/macbook-air-midnight-select-20220606-removebg-preview.png" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Iphone</h5>
-                                                    <p class="card-text">Great cell phone with free shipping to of all Brazil</p>
-                                                    <a href="#" class="btn btn-secondary">Comprar</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="card">
-                                                <img src="imagens/mac-mini-pro-hero-202301-removebg-preview.png" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Laptop</h5>
-                                                    <p class="card-text">Great laptop with free shipping to of all Brazil</p>
-                                                    <a href="#" class="btn btn-secondary">Comprar</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane" id="acessories">
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <div class="card">
-                                                <img src="imagens/MQDY3ref_VW_PF+watch-49-titanium-ultra_VW_PF_WF_CO+watch-face-49-alpine-ultra_VW_PF_WF_CO_GEO_BR-removebg-preview.png" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Iphone</h5>
-                                                    <p class="card-text">Great cell phone with free shipping to of all Brazil</p>
-                                                    <a href="#" class="btn btn-secondary">Comprar</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="card">
-                                                <img src="imagens/MQD83-removebg-preview.png" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Laptop</h5>
-                                                    <p class="card-text">Great laptop with free shipping to of all Brazil</p>
-                                                    <a href="#" class="btn btn-secondary">Comprar</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="pb-5 pt-5" id="specs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="imagens/onde-comprar-iphone-em-roma01.jpg" class="shadow rounded" alt="">
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="speak" class="">
-            <div class="container">
-                <div class="row">
-                    <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-7">
-                        <form>
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label fw-bold text-colored">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label fw-bold text-colored">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="row">
-                            <h3 class="section-title fs-4 text-colored">Redes sociais</h3>
-                            <ul class="social-links">
-                                <li class="fs-5">
-                                    <a href="#">
-                                        <i class="bi bi-facebook text-colored"></i>
-                                    </a>
-                                </li>
-                                <li class="fs-5 ms-1 me-1">
-                                    <a href="#">
-                                        <i class="bi bi-instagram text-colored"></i>
-                                    </a>
-                                </li>
-                                <li class="fs-5">
-                                    <a href="#">
-                                        <i class="bi bi-whatsapp text-colored"></i>
-                                    </a>
-                                </li>
+                        <div class="col-md-7" id="specs-text">
+                            <h2>About Store</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia facilis iure sequi. Mollitia autem maxime corrupti beatae iusto doloremque dolores ab. Sit, id! Possimus dignissimos sed repudiandae illo, exercitationem quidem!</p>
+                            <h2>About Products</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sunt, maiores possimus tempora cum quasi odio nemo minima laborum repellat, eos temporibus soluta rem, cumque necessitatibus laudantium. Corporis, veniam est!</p>
+                            <ul>
+                                <li>item 1</li>
+                                <li>item 2</li>
+                                <li>item 3</li>
                             </ul>
                         </div>
-                        <div class="row">
-                            <h3 class="section-title fs-4 text-colored">Endereço</h3>
-                            <p>
-                                
-                            </p>
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
+            <section id="products">
+                <div class="container mt-4 mx-auto">
+                    <div class="row">
+                        <h2 class="section-title text-center mb-4">Products</h2>
+                    </div>
+                    <div class="row">
+                        <aside class="col-md-2">
+                            <nav class="nav nav-pills flex-column nav-cardapio">
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#iphone" class="fw-bold text-start nav-link text-colored active">Iphone</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#mac" class="fw-bold text-start nav-link text-colored">Mac</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#acessories" class="fw-bold text-start nav-link text-colored mb-4">Acessories</button>
+                            </nav>
+                        </aside>
+                        <div class="col-md-10">
+                            <div class="section">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="iphone">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="card mb-5">
+                                                    <img src="imagens/iphone-12.png" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Iphone 12</h5>
+                                                        <p class="card-text">Great cell phone with free shipping to of all Brazil</p>
+                                                        <button type="button" class="btn btn-secondary">Comprar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="card mb-5">
+                                                    <img src="imagens/iphone-se.png" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Iphone SE</h5>
+                                                        <p class="card-text">Great cell phone with free shipping to of all Brazil</p>
+                                                        <button type="button" class="btn btn-secondary">Comprar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="mac">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="card mb-5">
+                                                    <img src="imagens/mac.png" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Mac</h5>
+                                                        <p class="card-text">Great computer with free shipping to of all Brazil</p>
+                                                        <button type="button" class="btn btn-secondary">Comprar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="card mb-5">
+                                                    <img src="imagens/macbook.png" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">MackBook Air</h5>
+                                                        <p class="card-text">Great laptop with free shipping to of all Brazil</p>
+                                                        <button type="button" class="btn btn-secondary">Comprar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="acessories">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="card mb-5">
+                                                    <img src="imagens/applewatch.png" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">AppleWatch</h5>
+                                                        <p class="card-text">Great SmartWatch with free shipping to of all Brazil</p>
+                                                        <button type="button" class="btn btn-secondary">Comprar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="card mb-5">
+                                                    <img src="imagens/airpods.png" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">AirPods Pro</h5>
+                                                        <p class="card-text">Great earbuds wirelles with free shipping to of all Brazil</p>
+                                                        <button type="button" class="btn btn-secondary">Comprar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="speak" class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label fw-bold text-colored">Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label fw-bold text-colored">E-mail</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="tel" class="form-label fw-bold text-colored">Telephone</label>
+                                    <input type="tel" class="form-control" id="tel" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label fw-bold text-colored">Your Message</label>
+                                    <input type="text" class="form-control" id="message" required>
+                                </div>
+                                <button type="submit" class="btn btn-secondary">Submit</button>
+                            </form>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="row">
+                                <h3 class="section-title fs-4"><i class="bi bi-person-fill"></i> Redes sociais</h3>
+                                <ul class="social-links">
+                                    <li class="fs-5">
+                                        <a href="#">
+                                            <i class="bi bi-facebook text-dark"></i>
+                                        </a>
+                                    </li>
+                                    <li class="fs-5 ms-1 me-1">
+                                        <a href="#">
+                                            <i class="bi bi-instagram text-dark"></i>
+                                        </a>
+                                    </li>
+                                    <li class="fs-5">
+                                        <a href="#">
+                                            <i class="bi bi-whatsapp text-dark"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <h3 class="section-title fs-4 text-colored"><i class="bi bi-pin-map-fill"></i> Endereço</h3>
+                                <p>
+                                    Rua HTML - Vila JavaScript, n° 32 - Sao Paulo - SP
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </div>
         <footer>
 
         </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="jquery.mask.min.js"></script>
+    <script>
+        let form = document.querySelector("form")
+        form.addEventListener('submit', function(e) {
+            e.preventDefault()
+            let tel = document.getElementById('tel').value
+            if (tel.length < 15) {
+            window.alert('Telefone inválido!')
+        }
+        })
+        $(document).ready(function() {
+            $('#tel').mask("(00) 00000-0000");
+        })
+        </script>
 </body>
 </html>

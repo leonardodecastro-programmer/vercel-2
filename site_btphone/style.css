@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 img {
     width: 100%;
     max-width: 100%;
@@ -13,11 +19,9 @@ body {
 }
 
 .nav .nav-link.active {
-    background-color: #5C636A;
+    background-color: #6c757d;
     color: #FFFFFF;
 }
-
-
 
 .nav .nav-link,
 .navbar-brand,
@@ -25,35 +29,43 @@ body {
     color: #FFFFFF;
 }
 
-#about {
+#carouselExampleSlidesOnly {
     background: radial-gradient(circle, #d4cfcf 0%, #26262c 100%);
+}
+
+
+
+.carousel-item img {
+    transform: rotate(30deg);
 }
 
 .card {
     background: radial-gradient(circle, #d4cfcf 50%, rgb(122, 122, 122) 100%);
 }
 
-#ipad {
-    transform: rotateZ(30deg);
-}
-
 .carousel-img {
     height: 60vh;
     width: auto;
-    padding: 24px;
+    padding: 40px;
 }
 
 #speak {
-    background: radial-gradient(circle, #d4cfcf 0%, #26262c 100%);
-    display: flex;
-    justify-content: center;
+    background-color: #b4b4b4;
 }
 
-.social-links li {
+#speak li {
     list-style: none;
     display: inline;
 }
 
-.social-links a {
+a {
     text-decoration: none;
+}
+
+#products h2 {
+    color: white;
+}
+
+#specs {
+    background-color: #b4b4b4;
 }
